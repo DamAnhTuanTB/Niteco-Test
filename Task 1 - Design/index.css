@@ -1,0 +1,228 @@
+/* general */
+@font-face {
+  font-family: Metric;
+  src: url(./font/MetricWeb-Regular.ttf);
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Metric;
+}
+
+/* header */
+.header {
+  display: flex;
+  padding: 10px 150px;
+  background-color: #1a1a1a;
+  align-items: center;
+}
+.logo {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.navs {
+  display: flex;
+  color: #c3c4c7;
+}
+.nav {
+  margin-left: 40px;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 17px;
+  transition: 0.1s;
+}
+.nav:hover {
+  font-weight: bold;
+}
+
+/* banner */
+.banner {
+  background-image: url("./images/herohob.jpg");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.introduce {
+  background: rgb(19, 19, 19);
+  width: 420px;
+  height: 220px;
+  padding: 20px 50px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.introduce .title-banner {
+  color: #dec117;
+  font-size: 40px;
+  font-weight: 300;
+}
+.introduce .title-description {
+  color: #dec117;
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+.button-read-more {
+  color: white;
+  font-size: 20px;
+  background-color: #dec117;
+  padding: 5px 0px;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.1s;
+  font-weight: 300;
+}
+.button-read-more:hover {
+  background-color: #a18c13;
+  font-weight: bold;
+}
+
+/* content */
+.content {
+  background-color: #21201e;
+  padding: 0px 150px 100px 150px;
+}
+.title-content {
+  font-size: 48px;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  padding: 30px 0px;
+}
+.cards {
+  color: white;
+  display: flex;
+}
+.cards > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
+.cards .card-title {
+  font-size: 24px;
+  text-align: center;
+  margin: 25px 0px 45px;
+  font-weight: 300;
+}
+.card-description > div {
+  font-size: 18px;
+  font-weight: 300;
+}
+.card-description > div:nth-child(2) {
+  margin-top: 30px;
+}
+.card-description > div:nth-child(3) {
+  margin-top: 20px;
+}
+.card-description > div:nth-child(4) {
+  margin-top: 20px;
+}
+.view-product {
+  font-size: 18px;
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #dec117;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 300;
+  transition: 0.1s;
+}
+.view-product:hover {
+  background-color: #a18c13;
+  font-weight: bold;
+}
+.price {
+  font-size: 30px;
+  margin-top: 10px;
+}
+.card-image-one {
+  width: 100%;
+  height: 200px;
+  background-image: url("./images/hob1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.card-image-two {
+  width: 100%;
+  height: 200px;
+  background-image: url("./images/hob2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.card-image-three {
+  width: 100%;
+  height: 200px;
+  background-image: url("./images/hob3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transform: rotate(90deg);
+}
+.sup-one {
+  font-size: 10px;
+}
+.sup-two {
+  font-size: 20px;
+}
+
+/* footer */
+.footer {
+  height: 60px;
+  background-color: #21201e;
+  padding: 0px 150px;
+}
+hr {
+  border: none;
+  height: 1px;
+  background-color: #585858;
+}
+.text-footer {
+  margin-top: 15px;
+  color: #757575;
+  text-align: center;
+}
+
+/* responsive in mobile */
+@media screen and (max-width: 576px) {
+  /* header */
+  .header {
+    padding: 10px;
+  }
+  .nav {
+    margin-left: 20px;
+  }
+
+  /* banner */
+  .introduce {
+    padding: 20px 10px;
+    margin-left: 10px;
+    width: 250px;
+    height: 170px;
+  }
+
+  /* content */
+  .content {
+    padding: 10px;
+  }
+  .cards {
+    display: block;
+  }
+  .cards > div {
+    margin-top: 40px;
+  }
+
+  /*footer */
+  .footer {
+    padding: 0px 10px;
+  }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <title>Niteco Test Logic</title>
+</head>
+
+<body>
+  <div class="background"></div>
+  <div class="content">
+    <div class="logo">
+      <img src="./images/logo.svg" alt="">
+    </div>
+    <div class="search-bar">
+      <img src="./images/icon-search.png" alt="" class="icon-search">
+      <input type="search" class="search" id="search" placeholder="Search by employee name at Niteco"
+        onKeyUp="handleSearch()" onKeyDown="myStopSearch()" onChange="handleOnChange()" />
+    </div>
+    <div id="search-result"></div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
